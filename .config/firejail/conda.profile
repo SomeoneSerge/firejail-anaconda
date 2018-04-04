@@ -43,3 +43,4 @@ seccomp
 whitelist ${HOME}/nb
 whitelist ${HOME}/.conda
 whitelist ${HOME}/.jupyter
+whitelist ${HOME}/.kaggle

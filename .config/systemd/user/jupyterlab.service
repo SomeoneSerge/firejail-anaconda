@@ -2,7 +2,7 @@
 Description=Jupyterlab
 
 [Service]
-ExecStart=${HOME}/.local/bin/fconda jupyter lab
+ExecStart=/usr/bin/sh -c 'PATH="$HOME/.conda/bin:$PATH" /usr/bin/firejail --profile=${HOME}/.config/firejail/conda.profile jupyter lab'
 Type=simple
 
 [Install]
