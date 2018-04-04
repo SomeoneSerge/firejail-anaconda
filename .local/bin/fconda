@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PATH=$HOME/.conda/bin:$PATH
+firejail --profile=$HOME/.config/firejail/conda.profile $@

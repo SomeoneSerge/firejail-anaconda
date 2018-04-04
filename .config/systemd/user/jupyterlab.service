@@ -1,0 +1,9 @@
+[Unit]
+Description=Jupyterlab
+
+[Service]
+ExecStart=${HOME}/.local/bin/fconda jupyter lab
+Type=simple
+
+[Install]
+WantedBy=default.target
